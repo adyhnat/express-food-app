@@ -2,7 +2,7 @@
 
 ### Node server setup
 
-1. Install express and bodyParser (https://github.com/expressjs/body-parser)
+Install express and bodyParser (https://github.com/expressjs/body-parser)
 
 $ npm install express
 
@@ -11,7 +11,7 @@ $ npm install body-parser
 
 ### Front-end
 
-1. Front part is built using:
+Front part is built using:
 
 Bootstrap v3.3.5
 
@@ -26,11 +26,11 @@ mustache JS
 
 ### Start
 
-1. Run application:
+Run application:
 
 $ npm start
 
-2. Enjoy!
+Enjoy!
 
 (c) Dominik Wlazlowski - javascript-html5-tutorial.com
 
