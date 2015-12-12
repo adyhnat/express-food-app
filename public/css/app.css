@@ -1,0 +1,405 @@
+/*
+ * test.css - Styles for pizzaApp
+ */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fc1501; /* #d00 */
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar-toggle {
+    border: solid 1px #f7d708 !important;
+}
+
+.navbar-fixed-top {
+    background-color: #fc1501; border: none
+}
+
+.footer {
+    width: 100%;
+    height: 6em;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+}
+
+.order-preview {
+    position: absolute; 
+    top: 2.5em; 
+    right: 6em; 
+    color: #f7d708;
+}
+
+.order-preview a {
+    text-decoration: none;
+}
+
+.order-preview a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+.order-preview a {
+    color: #f7d708;
+    font-size: 16px;
+}
+
+#welcome-btn {
+    width: 240px;
+    height: 100%;
+    background-color: #fc1501;
+    color: #f7d708;
+    border: solid 1px #fff;
+    padding: 14px;
+}
+
+#welcome-btn:hover {
+    color: #eee;
+}
+
+/* back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 32px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    z-index: 99999;
+}
+
+#back-to-top:hover {
+    background: #ccc;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+.logo-text {
+    color: #f7d708;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.logo-text:hover {
+    color: #eee;
+}
+
+/* sections */
+
+.hello-section {
+    height: 100%;
+    padding-top: 9em;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.pizza-section {
+    min-height: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    padding-top: 9em;
+    text-align: center;
+    background-color: #eee;
+
+}
+
+.drink-section {
+    min-height: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    padding-top: 9em;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.order-section {
+    min-height: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    padding-top: 9em;
+    text-align: center;
+    background-color: #eee;
+
+}
+
+#pizzas-items {
+    display: block;
+    text-align:left; 
+    padding: 10px;
+    margin-left: 1em;
+
+}
+
+#drinks-items {
+    display: block;
+    text-align:left; 
+    padding: 10px;
+    margin-left: 1em;
+}
+
+#order-items {
+    display: block;
+    text-align:left; 
+    padding: 10px;
+    margin-left: 1em;
+}
+
+/* others / std */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.divided10 {
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+
+.divided20 {
+    width: 100%;
+    height: 20px;
+}
+
+.divided30 {
+    width: 100%;
+    height: 30px;
+}
+
+/* top nav */
+
+.center-nav {
+    position: relative; 
+    left: 21.5%; 
+    font-weight: bold;
+}
+
+.center-nav li {
+    border: solid 1px #f7d708;
+    color: #f7d708;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 3px;
+}
+
+.center-nav li:hover {
+    background-color: #eee;
+}
+
+.center-nav li a span {
+    color: #f7d708;
+}
+
+/* menu items */
+
+.photo-sml {
+    width: 72px;
+    height: 80px;
+    float: left; 
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.pizza-col-item {
+    border: dashed 1px #ddd;
+    clear: right; 
+    padding: 12px;
+    display: inline-flex;
+    border-radius: 3px;
+}
+
+.drink-col-item {
+    clear: right; 
+    padding: 12px;
+    display: inline-flex;
+
+}
+
+.pizza-title {
+    color: #fc1501;
+    font-weight: bold; 
+    float: left; 
+    margin-top: 2px; 
+    font-size: 14px;
+    /* handle too long title */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pizza-price {
+    left: 7.2em;
+    position: absolute;
+    top: 3.2em;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+
+.pizza-add-to-cart {
+    height: 22px;
+    left: 6.7em;
+    position: absolute;
+    top: 5.0em;
+}
+
+.pizza-add-to-cart a {
+    text-decoration: none;
+    color: #0c0;
+}
+
+.pizza-add-to-cart a:hover {
+    opacity: 0.5;
+}
+
+.drink-type-label {
+    clear: both; 
+    font-weight: bold; 
+    margin: 10px 0;
+    padding-top: 16px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.mini-nav-link {
+    color: #0c0;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.mini-nav-link span {
+    font-size: 18px;
+}
+
+.mini-nav-link:hover {
+    color: #fc1501;
+    text-decoration: none;
+}
+
+.cart-added-blinker {
+    display: none;
+    font-weight: bold;
+}
+
+#submit-area {
+    display: none;
+    padding: 10px;
+    margin-left: 1em;
+    text-align: left;
+}
+
+#user-phone {
+    width: 25%;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px #ddd;
+}
+
+#user-address {
+    width: 35%;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px #ddd;
+}
+
+.price-total {
+    color: #0c0;
+    font-weight: bold;
+}
+
+/* mediaqueries */
+
+@media(max-width:860px) {
+    .order-preview {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .center-nav {
+        position: relative;
+        left: 0.2em;
+        width: 98%;
+    }
+
+    .center-nav li {
+        margin-bottom: 2px;
+        list-style: none;
+        list-style-image: none;
+        list-style-type: none;
+    }
+
+    .center-nav li:hover {
+        background-color: #eee;
+    }
+
+    .center-nav li a span {
+        color: #f7d708;
+    }
+
+    .photo-sml {
+        max-width: 25px;
+        max-height: 32px;
+    }
+
+    .col-xs-4 {
+        clear: both;
+        width: 100%;
+        height: 8em;
+        display: inline;
+
+    }
+
+    .pizza-title { 
+        width: 77%;
+    }
+
+    .pizza-price {
+        left: 0.8em;
+        position: absolute;
+        top: 4em;
+        font-size: 13px;
+        color: #333;
+    }
+
+    .pizza-add-to-cart {
+        height: 22px;
+        left: 0.8em;
+        position: absolute;
+        top: 5.2em;
+    }
+
+}
